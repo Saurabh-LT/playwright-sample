@@ -14,8 +14,8 @@ const {expect} = require("expect");
       'network': true,
       'video': true,
       'console': true,
-      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'Playwright-SmartUI-Project',
-      'smartUIBaseline': true
+      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'Playwright-SmartUI-GH-Action-Checking',
+      'smartUIBaseline': false
     }
   }
 
@@ -27,7 +27,8 @@ const {expect} = require("expect");
   }
 
   const browser = await chromium.connect({
-    wsEndpoint: `wss://cdp.lambdatest.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
+
+    wsEndpoint: `wss://stage-cdp.lambdatestinternal.com/playwright?capabilities=${encodeURIComponent(JSON.stringify(capabilities))}`
   })
 
   console.log('Browser Launched')
