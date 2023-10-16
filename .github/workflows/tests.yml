@@ -71,7 +71,7 @@ jobs:
     - name: Capture smart screenshots
       run: |
         pwd
-        smartui capture urls.json --config smartui-web.json --config playwright-sample/.smartui.json
+        smartui capture urls.json --config .smartui.json
 
   # playwright-smart-ui:
   #   runs-on: ubuntu-latest
