@@ -10,7 +10,7 @@
     "test-lighthouse-report": "node playwright-lighthouse-report.js"
   },
   "engines": {
-    "node": ">=12.7.0"
+    "node": ">=18.14.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.35.1",
