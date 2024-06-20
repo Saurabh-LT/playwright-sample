@@ -14,7 +14,7 @@ const {expect} = require("expect");
       'network': true,
       'video': true,
       'console': true,
-      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'SmartUI-PW',
+      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'DOT-3410',
       'smartUIBaseline': false
     }
   }
