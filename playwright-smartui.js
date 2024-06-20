@@ -41,8 +41,7 @@ const {expect} = require("expect");
   // Set `fullPage: true` to take full page screenshots
   await page.evaluate((_) => {}, `lambdatest_action: ${JSON.stringify({
     action: 'smartui.takeScreenshot',
-    arguments: { fullPage: true, screenshotName: 'ipinfo',
-    selectDOM: {cssSelector:['h1.heading-h1']} }
+    arguments: { fullPage: true, screenshotName: 'ipinfo' }
   })}`)
 
   await page.goto("https://demo.testim.io/");
