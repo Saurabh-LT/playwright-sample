@@ -19,7 +19,7 @@ const {expect} = require("expect");
       'network': true,
       'video': true,
       'console': true,
-      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'SmartUI-PW',
+      'smartUIProjectName': process.env.SMARTUI_PROJECT || 'RuuningFromGH',
       'smartUIBaseline': false
     }
   }
@@ -53,8 +53,7 @@ const {expect} = require("expect");
   // Set `fullPage: true` to take full page screenshots
   await page.evaluate((_) => {}, `lambdatest_action: ${JSON.stringify({
     action: 'smartui.takeScreenshot',
-    arguments: { fullPage: true, screenshotName: 'ipinfo',
-    selectDOM: {cssSelector:['h1.heading-h1']} }
+    arguments: { fullPage: true, screenshotName: 'ipinfo' }
   })}`)
 
   console.log('Navigating to Testim Demo...');
